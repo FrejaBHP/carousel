@@ -1,0 +1,238 @@
+body {
+    background: rgba(18, 18, 18, 100);
+    font-family: "Clear Sans", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.GameContainerGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 1fr 200px;
+}
+
+#headerdiv {
+    grid-row: 1;
+    position: fixed;
+
+    width: 100%;
+    height: 65px;
+    z-index: 10;
+
+    background: rgba(18, 18, 18, 100);
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(130, 130, 130, 100);
+
+    align-items: center;
+    justify-content: center;
+}
+
+#headertxt {
+    position: fixed;
+    width: 125px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+
+    font-family: 'Times New Roman';
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+#wordListUpload {
+    position: absolute;
+    left: 95%;
+    transform: translate(-95%);
+    margin-top: 8px;
+
+    width: 90px;
+    height: 42px;
+
+    background-color: rgba(130, 130, 130, 100);
+    border: none;
+    border-radius: 4px;
+
+    font-family: "Clear Sans", Helvetica, Arial, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+    display: none;
+}
+
+#gameStatusText {
+    position: fixed;
+    top: 8vh;
+    left: 50%;
+    transform: translate(-50%);
+    
+    height: 65px;
+    width: 100%;
+    
+    font-size: 24px;
+    text-align: center;
+
+    justify-self: center;
+}
+
+.WordleGrid {
+    grid-column: 1;
+    grid-row: 2;
+
+    position: relative;
+    top: 11vh;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 58px);
+    grid-template-rows: repeat(6, 58px);
+    gap: 9px;
+}
+
+#restartdiv {
+    grid-column: 1;
+
+    position: absolute;
+    bottom: 205px;
+    left: 50.2%;
+    transform: translate(-50.2%);
+}
+
+#restartButton {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translate(-50%);
+    
+    height: 60px;
+    width: 88px;
+
+    background-color: rgba(130, 130, 130, 100);
+    border: none;
+    border-radius: 4px;
+
+    font-family: "Clear Sans", Helvetica, Arial, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+
+    display: none;
+}
+
+#streakCounter {
+    position: relative;
+    left: 2px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 18px;
+    text-align: center;
+
+    display: none;
+
+    align-self: center;
+    justify-content: center;
+}
+
+#streakNumber {
+    color: rgba(80, 140, 80, 1);
+}
+
+.WordleKeyboard {
+    grid-column: 1;
+    grid-row: 3;
+
+    position: fixed;
+    bottom: 10px;
+    left: 50.2%;
+    transform: translate(-50.2%);
+    padding-top: 8px;
+
+    background: rgba(18, 18, 18, 100); 
+
+    display: grid;
+    grid-template-rows: repeat(3, 58px);
+    row-gap: 8px;
+
+    justify-content: center;
+}
+
+.WKeyboardRow1 {
+    grid-row: 1;
+
+    display: grid;
+    grid-template-columns: repeat(10, 43px);
+    column-gap: 5px;
+    
+    justify-content: center;
+}
+
+.WKeyboardRow2 {
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: repeat(9, 43px);
+    column-gap: 5px;
+    
+    justify-content: center;
+}
+
+.WKeyboardRow3 {
+    grid-row: 3;
+
+    display: grid;
+    grid-template-columns: 65px 43px 43px 43px 43px 43px 43px 43px 65px;
+    column-gap: 5px;
+    
+    justify-content: center;
+}
+
+.Key {
+    height: 100%;
+    width: 100%;
+    
+    border: none;
+    border-radius: 4px;
+    
+    font-family: "Clear Sans", Helvetica, Arial, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#keyENTER {
+    font-size: 12px;
+}
+
+#keyBCKSPC {
+    font-size: 12px;
+}
+
+#keyBCKSPC i {
+    position: relative;
+    top: 2px;
+}
+
+.Item {
+    display: inline-flex;
+
+    height: 100%;
+    width: 100%;
+
+    background: none;
+    
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    
+    align-items: center;
+    justify-content: center;
+}

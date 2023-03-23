@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle (Næsten)</title>
+    <link rel="icon" type="image/x-icon" href="Assets\wordle_logo_32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="GameContainerGrid">
+        <div id="headerdiv">
+            <button type="button" id="wordListUpload">Upload Ordliste</button>
+            <input id='wordListInput' type='file' hidden/>
+            <h2 id="headertxt">Wordle</h2>
+        </div>
+        <p id="gameStatusText"></p>
+        <div class="WordleGrid" id="wordleGrid"></div>
+        <div id="restartdiv">
+            <button type="button" id="restartButton">Spil Igen?</button>
+            <p id="streakCounter">Streak: 
+                <span id="streakNumber"></span>
+            </p>
+        </div>
+        <div class="WordleKeyboard" id="wordleKeyboard">
+            <div class="WKeyboardRow1" id="kbRow1"></div>
+            <div class="WKeyboardRow2" id="kbRow2"></div>
+            <div class="WKeyboardRow3" id="kbRow3"></div>
+        </div>
+    </div>
+</body>
+</html>

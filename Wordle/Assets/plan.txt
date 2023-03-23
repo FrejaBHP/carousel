@@ -1,0 +1,22 @@
+1) Lave et gitter til selve spillet
+
+2) Lave funktioner der laver en liste over ord og vælger et
+Her gemmes alle (valide) ord i et array
+
+3) Forsøge at samle keystrokes på siden i stedet for at skrive det ind i små bokse
+
+4) Skabe forbindelse mellem gæt og UI
+
+5) Skabe logik til at gætte ord.
+Der gennemgås og sammenlignes med det ord, der forsøges og gættes.
+Der tjekkes først, om bogstaverne er identiske, ellers om de findes i ordet.
+
+6) I takt med sidste punkt, skal felterne males for at signallere, om de er korrekte.
+
+7) Finde en måde hvorpå man kan importere hele ordlisten
+
+8) Finde en måde hvorpå man kan importere ordlisten manuelt
+
+9) Gør det muligt at spille igen
+
+10) Streak counter?
